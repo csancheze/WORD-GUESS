@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Word Guess</title>
+  </head>
+  <body>
+      <header>
+        <h1>Animal Word Guess</h1>
+        <p>Instructions: Try and guess an animal name by filling in a number of blanks that match the number of letters in the name. Press the letter keys to guess. You have 10 seconds to complete the word.
+         <br> You need a Keyboard for it to work.
+        </p>
+        <button id="start">START</button>
+      </header>
+       <img src="./assets/images/background.jpg">
+      <main>
+     
+      <div id="stats" >
+        <h2>Time: <span id="timer">10</span></h2>
+          <ul>
+              <li>
+                  Wins: <span id="wins"></span>
+              </li>
+              <li>
+                Losses: <span id="losses"></span>
+            </li>      
+          </ul>
+          <button id="reset">RESET</button>
+        </div>
+      
+      <div id="gamebox">
+        <p id="textbox" style="display: none">
+         <!--Game area-->
+        </p> 
+        <p id="welcome" style="display: block">Do you want to play?</p>
+      </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
